@@ -15,10 +15,13 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![Nuxt][nuxt-src]][nuxt-href]
 
 Integrate the Yeerlo client library in your nuxt project to start displaying events on your web apps.
+
+## Previews
+
 <p align="center">
-  <img src="public/preview1.png" alt="Logo 1" width="30%" />
-  <img src="public/preview2.png" alt="Logo 2" width="30%" />
-  <img src="public/preview3.png" alt="Logo 3" width="30%" />
+  <img src="public/preview1.png" alt="Preview 1" width="30%" />
+  <img src="public/preview2.png" alt="Preview 2" width="30%" />
+  <img src="public/preview3.png" alt="Preview 3" width="30%" />
 </p>
 
 ## Features
