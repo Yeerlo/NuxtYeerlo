@@ -3,7 +3,7 @@ Get your module up and running quickly.
 
 Find and replace all on all files (CMD+SHIFT+F):
 - Name: Yeerlo
-- Package name: @nuxt/yeerlo
+- Package name: @yeerlo/nuxt
 - Description: Yeerlo's official Nuxt module
 -->
 
@@ -34,26 +34,26 @@ Integrate the Yeerlo client library in your nuxt project to start displaying eve
 
 ## Quick Setup
 
-1. Add `@nuxt/yeerlo` dependency to your project
+1. Add `@yeerlo/nuxt` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D @nuxt/yeerlo
+pnpm add -D @yeerlo/nuxt
 
 # Using yarn
-yarn add --dev @nuxt/yeerlo
+yarn add --dev @yeerlo/nuxt
 
 # Using npm
-npm install --save-dev @nuxt/yeerlo
+npm install --save-dev @yeerlo/nuxt
 ```
 
-2. Add `@nuxt/yeerlo` to the `modules` section of `nuxt.config.ts` and setup the runtimeConfig as shown below:
+2. Add `@yeerlo/nuxt` to the `modules` section of `nuxt.config.ts` and setup the runtimeConfig as shown below:
 
 ```js
 export default defineNuxtConfig({
   ssr: false, // REQUIRED
   modules: [
-    '@nuxt/yeerlo'
+    '@yeerlo/nuxt'
   ],
   runtimeConfig:{
     public:{
