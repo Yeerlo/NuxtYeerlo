@@ -98,13 +98,13 @@ npm run release
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-yeerlo/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-yeerlo
+[npm-version-href]: https://www.npmjs.com/package/@yeerlo/nuxt
 
 [npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-yeerlo.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-yeerlo
+[npm-downloads-href]: https://www.npmjs.com/package/@yeerlo/nuxt
 
 [license-src]: https://img.shields.io/npm/l/nuxt-yeerlo.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-yeerlo
+[license-href]: https://www.npmjs.com/package/@yeerlo/nuxt
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
