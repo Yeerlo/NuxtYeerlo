@@ -2,7 +2,7 @@
   "name": "@nuxt/yeerlo",
   "version": "1.0.0",
   "description": "Yeerlo's official Nuxt module",
-  "repository": "https://github.com/Yeerlo/@nuxt-yeerlo",
+  "repository": "https://github.com/Yeerlo/NuxtYeerlo",
   "license": "MIT",
   "type": "module",
   "exports": {
