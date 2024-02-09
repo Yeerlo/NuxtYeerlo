@@ -1,6 +1,5 @@
 <template>
   <div>
-    Nuxt module playground!
     <NuxtYeerlo/>
   </div>
 </template>

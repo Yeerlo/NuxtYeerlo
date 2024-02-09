@@ -15,17 +15,14 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![Nuxt][nuxt-src]][nuxt-href]
 
 Integrate the Yeerlo client library in your nuxt project to start displaying events on your web apps.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@nuxt/yeerlo?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+![Logo](public/preview.png)
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- ⛰ &nbsp;Embed your events
+- 🚠 &nbsp;Choose your prefered display formats
+- 🌲 &nbsp;Lets users attend and book tickets directly in your web apps without any form of redirection
 
 ## Quick Setup
 
@@ -42,13 +39,24 @@ yarn add --dev @nuxt/yeerlo
 npm install --save-dev @nuxt/yeerlo
 ```
 
-2. Add `@nuxt/yeerlo` to the `modules` section of `nuxt.config.ts`
+2. Add `@nuxt/yeerlo` to the `modules` section of `nuxt.config.ts` and setup the runtimeConfig as shown below:
 
 ```js
 export default defineNuxtConfig({
+  ssr: false, // REQUIRED
   modules: [
     '@nuxt/yeerlo'
-  ]
+  ],
+  runtimeConfig:{
+    public:{
+      yeerlo: {
+        creatorId: '2bbegYWBgx...', // your yeerlo id
+        layoutMode: "events", // one of "events" | "cinemas" and "meetings" are coming soon
+        displayFormat: "default", // one of "default", "simple" | "masonry" and "boxed" are coming soon
+        limit: 0 // (Optional) total number of events you want to display.
+      },
+    }
+  },
 })
 ```
 
