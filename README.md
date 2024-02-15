@@ -73,6 +73,7 @@ Following these steps will help you manage and publish updates to your npm packa
 # Yeerlo
 
 [![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
 Integrate the Yeerlo client library in your nuxt project to start displaying events on your web apps.
@@ -131,35 +132,12 @@ export default defineNuxtConfig({
 
 That's it! You can now use Yeerlo in your Nuxt app ✨
 
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Generate type stubs
-npm run dev:prepare
-
-# Develop with the playground
-npm run dev
-
-# Build the playground
-npm run dev:build
-
-# Run ESLint
-npm run lint
-
-# Run Vitest
-npm run test
-npm run test:watch
-
-# Release new version
-npm run release
-```
-
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@yeerlo/nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://www.npmjs.com/package/@yeerlo/nuxt
+
+[npm-downloads-src]: https://img.shields.io/npm/dt/@yeerlo/nuxt.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@yeerlo/nuxt
 
 [license-src]: https://img.shields.io/npm/l/@yeerlo/nuxt.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://www.npmjs.com/package/@yeerlo/nuxt
