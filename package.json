@@ -1,9 +1,10 @@
 {
   "name": "@yeerlo/nuxt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Yeerlo's official Nuxt module",
   "repository": "https://github.com/Yeerlo/NuxtYeerlo",
   "license": "MIT",
+  "keywords": ["yeerlo","nuxt","nuxt-yeerlo","event management system", "embedded events","conference","meetings"],
   "type": "module",
   "exports": {
     ".": {
