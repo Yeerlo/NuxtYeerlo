@@ -1,5 +1,5 @@
-import { defineNuxtPlugin } from '#app'
-import Yeerlo from '../components/Yeerlo.vue'
+import { defineNuxtPlugin } from '#app';
+import Yeerlo from '../components/Yeerlo.vue';
 
 const loadStyles = (callback: Function) => {
   const head = document.getElementsByTagName('head')[0];
@@ -10,12 +10,12 @@ const loadStyles = (callback: Function) => {
 
   const style = document.createElement("link");
   style.setAttribute("rel", "stylesheet");
-  style.setAttribute("href", "https://sdk.yeerlo.com/v1.min.css");
+  style.setAttribute("href", link);
   
   // Add style to document head
   head.appendChild(style);
   style.onload = () => {
-    callback()
+    callback();
   }
 }
 
@@ -26,14 +26,14 @@ const loadScript = (callback: Function) => {
   // prevent duplicate injections
   if(head.querySelector(`script[src="${link}"]`)) return callback();
 
-  const script = document.createElement('script')
-  script.defer = true
-  script.src = 'https://sdk.yeerlo.com/v1.js'
+  const script = document.createElement('script');
+  script.defer = true;
+  script.src = link;
 
   // Add script to document head
-  head.appendChild(script)
+  head.appendChild(script);
   script.onload = () => {
-    callback()
+    callback();
   }
 }
 
