@@ -134,6 +134,46 @@ export default defineNuxtConfig({
 
 That's it! You can now use Yeerlo in your Nuxt app ✨
 
+## Color Scheme
+
+```css
+*{
+  --y-white: #fff;
+  --y-black: #000;
+  --y-black-b: #0000;
+  --y-base-color-light: #ff9900;
+  --y-base-color-dark: #f37e01;
+  --y-base-color-dark-hover: #f6682f;
+  --y-ended: #9c27b0;
+  --y-text-gray: #888;
+  --y-text-gray-dark: #565656;
+  --y-hr: #e2e5e7;
+  --y-description: #7c828c;
+  --y-order-bg: #f6f6f6;
+  --y-discount-code-border: #ddd;
+  --y-card-loading-gradient-1: #ececec;
+  --y-card-loading-gradient-2: #f5f5f5;
+  --y-reg-input-bottom: #eee;
+  --y-spinner-loader-overlay: #ff980075;
+  --y-input-label: #8597a3;
+  --y-toast-danger: #ff1403;
+  --y-toast-success: #009688;
+  --y-toast-message-1: #666666;
+  --y-toast-message-2: #333;
+  --y-shadow: rgba(0, 0, 0, 0.1);
+  --y-shadow-1: rgba(0, 0, 0, .05);
+  --y-shadow-2: rgba(0, 0, 0, .15);
+  --y-modal-overlay: rgba(0, 0, 0, 0.6);
+  --y-ticket-quantity-select-border: rgb(225, 231, 231);
+  --y-card-loader-shadow: rgba(0, 0, 0, 0.05);
+  --y-simple-layout-bg: #121212;
+  --y-simple-layout-date-color: #f9b234;
+  --y-countdown-bg: rgba(255,255,255,0.5);
+  --y-countdown-border: rgba(255,255,255,0.25);
+}
+```
+
+
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@yeerlo/nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://www.npmjs.com/package/@yeerlo/nuxt
