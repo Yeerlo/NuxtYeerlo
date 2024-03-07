@@ -81,9 +81,10 @@ Integrate the Yeerlo client library in your nuxt project to start displaying eve
 ## Previews
 
 <p align="center">
-  <img src="public/preview1.png" alt="Preview 1" width="30%" />
-  <img src="public/preview2.png" alt="Preview 2" width="30%" />
-  <img src="public/preview3.png" alt="Preview 3" width="30%" />
+  <img src="public/preview1.png" alt="Preview 1" width="25%" />
+  <img src="public/preview2.png" alt="Preview 2" width="25%" />
+  <img src="public/preview3.png" alt="Preview 3" width="25%" />
+  <img src="public/preview4.png" alt="Preview 3" width="25%" />
 </p>
 
 ## Features
