@@ -94,6 +94,7 @@ Integrate the Yeerlo client library in your nuxt project to start displaying eve
 - 🚠 &nbsp;Choose your prefered display formats
 - 🌲 &nbsp;Lets users attend and book tickets directly in your web apps without any form of redirection
 - 👩‍🎨 &nbsp;Responsive & mobile friendly UI
+- 🖌️ &nbsp;Customizable color scheme
 
 ## Quick Setup
 
