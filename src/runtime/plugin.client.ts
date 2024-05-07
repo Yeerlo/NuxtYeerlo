@@ -1,9 +1,10 @@
 import { defineNuxtPlugin } from '#app';
 import Yeerlo from '../components/Yeerlo.vue';
+let _useUpdatedVersions: boolean;
 
 const loadStyles = (callback: Function) => {
   const head = document.getElementsByTagName('head')[0];
-  const link = "https://sdk.yeerlo.com/v1.min.css";
+  const link = `https://sdk.yeerlo.com/v1.min.css${_useUpdatedVersions?`?${+new Date()}`:''}`;
 
   // prevent duplicate injections
   if(head.querySelector(`link[href="${link}"]`)) return callback();
@@ -21,7 +22,7 @@ const loadStyles = (callback: Function) => {
 
 const loadScript = (callback: Function) => {
   const head = document.getElementsByTagName('head')[0];
-  const link = "https://sdk.yeerlo.com/v1.js";
+  const link = `https://sdk.yeerlo.com/v1.js${_useUpdatedVersions?`?${+new Date()}`:''}`;
 
   // prevent duplicate injections
   if(head.querySelector(`script[src="${link}"]`)) return callback();
@@ -37,12 +38,15 @@ const loadScript = (callback: Function) => {
   }
 }
 
-const assetstLoaded = new Promise<void>((resolve) => {
-  loadStyles(()=> loadScript(() => resolve()));
-});
-
 export default defineNuxtPlugin((nuxtApp) => {
   const options = useRuntimeConfig().public.yeerlo;
+  _useUpdatedVersions = options?.alwaysUseUpToDateVersions;
+  delete options?.alwaysUseUpToDateVersions;
+  
+  const assetstLoaded = new Promise<void>((resolve) => {
+    loadStyles(()=> loadScript(() => resolve()));
+  });
+
   nuxtApp.provide('yeerloConfig',options);
 
   nuxtApp.provide('assetstLoaded',assetstLoaded);

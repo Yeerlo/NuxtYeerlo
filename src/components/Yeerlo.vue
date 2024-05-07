@@ -6,7 +6,7 @@
     import { useNuxtApp } from '#app';
     const nuxtApp = useNuxtApp();
 
-    onMounted(() => {
+    onBeforeMount(() => {
         nuxtApp.$assetstLoaded.then(()=>{
             new window.Yeerlo(nuxtApp.$yeerloConfig).init();
         });

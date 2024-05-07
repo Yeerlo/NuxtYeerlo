@@ -102,20 +102,20 @@ Integrate the Yeerlo client library in your nuxt project to start displaying eve
 
 ```bash
 # Using pnpm
-pnpm add -D @yeerlo/nuxt
+pnpm add @yeerlo/nuxt
 
 # Using yarn
-yarn add --dev @yeerlo/nuxt
+yarn add @yeerlo/nuxt
 
 # Using npm
-npm install --save-dev @yeerlo/nuxt
+npm install @yeerlo/nuxt
 ```
 
 2. Add `@yeerlo/nuxt` to the `modules` section of `nuxt.config.ts` and setup the runtimeConfig as shown below:
 
 ```js
 export default defineNuxtConfig({
-  ssr: false, // REQUIRED
+  ssr: true, // "true" or "false". Works eitherway regardless. i.e Yeerlo Nuxt is SSR friendly!
   modules: [
     '@yeerlo/nuxt'
   ],
@@ -125,11 +125,23 @@ export default defineNuxtConfig({
         creatorId: '2bbegYWBgx...', // your yeerlo id
         layoutMode: "events", // one of "events" | "cinemas" and "meetings" are coming soon
         displayFormat: "default", // one of "default", "simple" | "masonry" and "boxed" are coming soon
-        limit: 0 // (Optional) total number of events you want to display.
+        limit: 0, // (Optional) total number of events you want to display.
+        alwaysUseUpToDateVersions: false // (Optional) To always use the updated versions of the library, set this property to `true`. Doing this bypasses our caching strategies to deliver you with updated versions of the library.
       },
     }
   },
 })
+```
+
+## Usage
+Using the component is very simple; an example is shown below:
+
+```vue
+<template>
+  <div>
+    <NuxtYeerlo/>
+  </div>
+</template>
 ```
 
 That's it! You can now use Yeerlo in your Nuxt app ✨

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <NuxtYeerlo/>
+    <ClientOnly>
+      <NuxtYeerlo/>
+    </ClientOnly>
   </div>
 </template>
 
