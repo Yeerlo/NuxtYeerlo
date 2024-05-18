@@ -182,6 +182,8 @@ That's it! You can now use Yeerlo in your Nuxt app ✨
   --y-simple-layout-date-color: #f9b234;
   --y-countdown-bg: rgba(255,255,255,0.5);
   --y-countdown-border: rgba(255,255,255,0.25);
+  --y-white-smoke: #f5f5f5;
+  --y-white-smoke-text: #a2a5b9;
 }
 ```
 
