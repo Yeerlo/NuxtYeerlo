@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         // creatorIds: ['2bbegYWBgxCUih8p26L17V3IM7W'], // display events of specific creators
         // random: true, // display random events from any creator (the default mode when none of the other modes are set)
         // categorySlug: 'charity-and-aid', // display events in a particular category
-        // countryName: 'Ghana', // "US", "UK", "Canada" etc. display events in a particular country
+        // countryName: 'Ghana', // "US", "GB", "Canada" etc. display events in a particular country
 
         // END 5 EVENT DISPLAY MODES
 
