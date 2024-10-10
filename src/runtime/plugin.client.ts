@@ -39,7 +39,7 @@ const loadScript = (callback: Function) => {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const options = useRuntimeConfig().public.yeerlo;
+  const options = nuxtApp.$config?.public.yeerlo;
   _useUpdatedVersions = options?.alwaysUseUpToDateVersions;
   delete options?.alwaysUseUpToDateVersions;
   

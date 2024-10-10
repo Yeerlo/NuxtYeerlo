@@ -1,6 +1,6 @@
 {
   "name": "@yeerlo/nuxt",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Yeerlo's official Nuxt module",
   "repository": "https://github.com/Yeerlo/NuxtYeerlo",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "nuxt-module-build build",
+    "prepack": "nuxt-module-build build && cp -r ./src/components ./dist",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",

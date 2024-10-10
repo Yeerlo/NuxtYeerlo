@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
-  modules: ['../src/module'],
+  // modules: ['../src/module'],
+  modules: ['../dist/module'],
   runtimeConfig:{
     public:{
       yeerlo: {
