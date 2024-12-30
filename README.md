@@ -193,6 +193,8 @@ That's it! You can now use Yeerlo in your Nuxt app ✨
   --y-countdown-border: rgba(255,255,255,0.25);
   --y-white-smoke: #f5f5f5;
   --y-white-smoke-text: #a2a5b9;
+  --y-social-bg: #f5f5f5;
+  --y-social-bg-hover: #e5e5e5;
 }
 ```
 
